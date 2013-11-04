@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-# sed spaghetti for IRC
-# Usage: sed.py nick "raw irc data" sed input
+# s/this module/spaghetti, will rewrite soon don't worry
 # by andri
 from sys import argv
 from subprocess import Popen, PIPE
@@ -26,7 +25,7 @@ if sed[:2] == "s/" and "/" in sed[2:]:
         # Filters the list, so only the nick's messages stay
         f = filter(lambda x: '\t'+nick+'\t' in x, f)
         # Gets the last message of the nick and makes it a string
-        msg = '<'+f[-2][20:].replace('\t','> ')
+        msg = f[-2][21+len(nick):]
     # Checks if the command ends with a /g or /I and writes it to the variable flag
     if sed[-2:] == "/g":
         flag = "g"
@@ -45,4 +44,4 @@ if sed[:2] == "s/" and "/" in sed[2:]:
     # Then writes the output to a variable and prints it
     c = b.stdout.read().strip('\n')
     
-    print nick, c
+    print '<'+nick+'> '+c
