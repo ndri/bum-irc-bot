@@ -99,8 +99,8 @@ TODO
 * Fix current modules
 * More modules: __help__, dictionary, python, remind, tell, translate, urban dictionary, wikipedia, search engine, wolfram alpha, more fun modules
 * A greeting feature
-* Maybe a better way to make simple triggers
+* _Maybe_ a better way to make simple triggers
 * If possible, make it a little faster
 * A way for modules to be able to kick
 * Fix bugs
-* Make the examples more clever
+* Come up with clever examples
