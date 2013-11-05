@@ -98,9 +98,10 @@ TODO
 * __DOCUMENTATION__
 * Fix current modules
 * More modules: __help__, dictionary, python, remind, tell, translate, urban dictionary, wikipedia, search engine, wolfram alpha, more fun modules
+* Modules in other languages to prove that they do work
 * A greeting feature
 * _Maybe_ a better way to make simple triggers
-* If possible, make it a little faster
+* ~~If possible, make it a little faster~~
 * A way for modules to be able to kick
 * Fix bugs
 * Come up with clever examples
