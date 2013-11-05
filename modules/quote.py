@@ -9,10 +9,10 @@ from random import choice
 logdir = "logs/"
 # Get channel and nick from raw irc data
 data = argv[1]
-if len(argv) == 2: # If no arguments are found, it gets the nick from the raw data
+if len(argv) == 3: # If no arguments are found, it gets the nick from the raw data
     nick = data[1:data.find('!')]
 else: 
-    nick = argv[2] # If an argument is found, it gets the nick from the first argument
+    nick = argv[3] # If an argument is found, it gets the nick from the first argument
 channel = data.split(' ')[2].replace('/','-') # Gets the channel from the data and replaces slashes with dashes
 
 # Assumes that the logs are in the log directory with the same name as the channel, but slashes are replaced with dashes
