@@ -4,7 +4,7 @@
 # by andri
 from sys import argv
 
-q = ' '.join(argv[2:])
+q = ' '.join(argv[3:])
 a = [
 'Sure. Why not?',
 'Definitely.',
