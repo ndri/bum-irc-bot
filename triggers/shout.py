@@ -8,7 +8,6 @@ from random import choice
 # This script is executed every time a PRIVMSG happens
 # Get PRIVMSG from arguments
 msg = ' '.join(sys.argv[3:])
-msg = msg[msg.find(":",2)+1:]
 nick = sys.argv[1]
 
 # Checks if input is greater than 5 characters and if input doesn't have lowercase letters
