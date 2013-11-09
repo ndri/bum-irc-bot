@@ -97,7 +97,7 @@ TODO
 =
 * __DOCUMENTATION__
 * Fix current modules
-* More modules: __help__, dictionary, python, remind, tell, translate, urban dictionary, wikipedia, search engine, wolfram alpha, more fun modules
+* More modules: __help__, url titles, dictionary, python, remind, tell, translate, urban dictionary, wikipedia, search engine, wolfram alpha, more fun modules
 * Modules in other languages to prove that they do work
 * A greeting feature
 * _Maybe_ a better way to make simple triggers
