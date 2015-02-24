@@ -1,7 +1,7 @@
 bum
 =
 
-bum is a simple IRC bot written in Python 2.7 that is inspired by [sadbot](https://github.com/doidbb/sadbot). It is in very early development stages.
+bum is a simple IRC bot written in Python 2.7 that is inspired by [sadbot](https://github.com/doidbb/sadbot). It is in very early development stages. Gonna work on this soon, I promise. 
 
 The name comes from the following train of thought: 
 
