@@ -11,9 +11,9 @@ from datetime import datetime
 # CHANGE THESE
 network = 'irc.rizon.net'
 botnick = 'nick'
-channels = ['#channel1', '#channel2']
+channels = ('#channel1', '#channel2')
 password = 'password' # Leave blank if you don't want to identify
-prefixes = ['.', ',', ':', ';', '!', '>', '~'] # Only 1-byte prefixes, sorry
+prefixes = ('.', ',', ':', ';', '!', '>', '~') # Only 1-byte prefixes, sorry
 filecommands = {
     'py': 'python',
     'rb': 'ruby',
