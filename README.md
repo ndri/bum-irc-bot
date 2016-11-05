@@ -1,9 +1,9 @@
 bum
 =
 
-bum is a simple IRC bot written in Python 2.7 that is inspired by [sadbot](https://github.com/doidbb/sadbot). It is in very early development stages. Gonna work on this soon, I promise. 
+bum is a simple IRC bot written in Python 2.7 that is inspired by [sadbot](https://github.com/doidbb/sadbot). It is in very early development stages.
 
-The name comes from the following train of thought: 
+The name comes from the following train of thought:
 
 bot => butt sounds like bot => bum is a synonym of butt (butt was taken)
 
@@ -31,18 +31,18 @@ Modules
 -
 * Modules and triggers can be in any language. Just make sure the file extension and program are in the filecommands directory.
 * Modules should be put in the "modules/" directory.
-* The commands for the modules are their filenames without the extensions. 
+* The commands for the modules are their filenames without the extensions.
 * The first argument(argv[1]) is the raw IRC data, (:name!~nick@vhost PRIVMSG #channel :>command arguments).
 * The second argument(argv[2]) is the nick of the person who executed the command.
 * The rest of the arguments are arguments for the command. Use ' '.join(argv[3:]) if you want to get a sentence from the arguments.
 * If you want to have the output use /me or ACTION, add [me] in the beginning of the output. (example in modules/beer.py)
 * The output for the module should be printed, so you receive the same output as you would if you executed the module in a terminal.
-* The output can be multiple lines. 
+* The output can be multiple lines.
 
 Triggers
 -
 * Triggers should be put in the "triggers/" directory.
-* Every file in the directory is executed whenever something is said. 
+* Every file in the directory is executed whenever something is said.
 * The arguments and the output are the same as on the modules.
 
 Examples
@@ -53,11 +53,11 @@ Module example:
     # -*- coding: utf-8 -*-
     # what this module does
     from sys import argv
-    
+
     channel = argv[1].split()[2]
     nick = argv[2]
     message = ' '.join(argv[3:])
-    
+
     print 'Your name is %s.' %nick
     print 'You are in the channel %s.' %channel
     print 'You just said "%s".' %message
@@ -69,7 +69,7 @@ Trigger example:
     # -*- coding: utf-8 -*-
     # what this trigger does
     from sys import argv
-    
+
     message = ' '.join(argv[3:])
 
     if 'boobs' in message:
